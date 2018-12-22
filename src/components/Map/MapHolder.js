@@ -2,7 +2,11 @@
 import React from 'react';
 import DeckGL, {LineLayer} from 'deck.gl';
 import {StaticMap} from 'react-map-gl';
+
 import RefinaryLayer from './Layers/RefinaryLayer';
+import VesselLayer   from './Layers/VesselLayer';
+import RefinaryLayer2 from './Layers/RefinaryLayer2';
+
 import styles from './MapHolder.less';
 // Set your mapbox access token here
 const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoibW9nbW9nIiwiYSI6ImNpZmI2eTZuZTAwNjJ0Y2x4a2g4cDIzZTcifQ.qlITXIamvfVj-NCTtAGylw';
@@ -32,7 +36,10 @@ export default class MapHolder extends React.Component {
           controller={true}
           initialViewState={initialViewState}
         >
-          <RefinaryLayer data={refinaries}/>
+          {/*<RefinaryLayer data={refinaries}/>*/}
+          <VesselLayer data={refinaries}/>
+
+{/*          <RefinaryLayer2 data={refinaries}/>*/}
 
           <StaticMap mapboxApiAccessToken={MAPBOX_ACCESS_TOKEN} />
         </DeckGL>
