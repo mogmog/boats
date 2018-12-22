@@ -7,7 +7,7 @@ const defaultParams = {
     colors: [1,1, 1, 1]
   }),
 
-  sizeScale: 100,
+  sizeScale: 500,
 
   getColor: f => {
     return [255, 0, 0, 40];
