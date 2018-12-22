@@ -13,10 +13,10 @@ const MAPBOX_ACCESS_TOKEN = 'pk.eyJ1IjoibW9nbW9nIiwiYSI6ImNpZmI2eTZuZTAwNjJ0Y2x4
 
 // Initial viewport settings
 const initialViewState = {
-  longitude: -122.41669,
-  latitude: 37.7853,
+  longitude: -122.22708893,
+  latitude: 38.06577078,
   zoom: 13,
-  pitch: 0,
+  pitch: 45,
   bearing: 0
 };
 
